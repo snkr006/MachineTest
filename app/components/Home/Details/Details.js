@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
-import { Text, View, Dimensions, TextInput, TouchableOpacity, Image, ImageBackground, ScrollView } from 'react-native';
+import React from 'react';
+import { Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 import Styles1 from '../Main/Styles';
 import Styles2 from '../Products/Styles';
 import Header from '../../../globals/Components/Header';

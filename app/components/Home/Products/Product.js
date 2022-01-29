@@ -33,33 +33,51 @@ const Product = (props) => {
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item, index }) => {
                     return (
-                        <TouchableOpacity style={{ flex: 1, paddingRight: index % 2 == 0 ? 1 : 0 }}
+                        <TouchableOpacity style={{
+                            flex: 1,
+                            // paddingRight: index % 2 == 0 ? 1 : 0
+                        }}
                             onPress={() => props.navigation.navigate('Details', { data: item })}>
 
-                            <ImageBackground style={Styles.image}
-                                resizeMethod='resize'
-                                resizeMode='contain'
-                                source={item.image}>
-                                <View style={Styles.ratingView}>
-                                    <View style={Styles.ratingview1}>
-                                        <View style={Styles.ratingView2}>
-                                            <Text style={Styles.rating}>
-                                                {item.rating}
-                                            </Text>
-                                            <Image style={Styles.star}
-                                                source={require('../../../images/icons/star.png')} />
-                                            <Text style={Styles.seperator}>
-                                                |
-                                            </Text>
-                                            <Text style={Styles.noofRating}>
-                                                {item.noofRating}k
-                                            </Text>
-                                        </View>
-                                        <View style={Styles.ratingView3} />
-                                    </View>
+                            <View>
+                                <ImageBackground style={Styles.image}
+                                    // resizeMethod='resize'
+                                    resizeMode='cover'
+                                    source={item.image}>
 
-                                </View>
-                            </ImageBackground>
+                          
+                                {/* <View style={{ position: 'absolute', bottom: 0 }}> */}
+                                    <View
+                                        // style={{
+                                        //     flex: 1,
+                                        //     justifyContent: 'flex-end',
+                                        //     paddingBottom: 10,
+                                        //     paddingLeft: 10
+                                        // }}
+                                    style={Styles.ratingView}
+                                    >
+                                        <View style={Styles.ratingview1}>
+                                            <View style={Styles.ratingView2}>
+                                                <Text style={Styles.rating}>
+                                                    {item.rating}
+                                                </Text>
+                                                <Image style={Styles.star}
+                                                    source={require('../../../images/icons/star.png')} />
+                                                <Text style={Styles.seperator}>
+                                                    |
+                                                </Text>
+                                                <Text style={Styles.noofRating}>
+                                                    {item.noofRating}k
+                                                </Text>
+                                            </View>
+                                            <View style={Styles.ratingView3} />
+                                        </View>
+
+                                    </View>
+                                    </ImageBackground>
+                                {/* </View> */}
+                            </View>
+
                             <View style={Styles.desc}>
                                 <View style={Styles1.basecontainer}>
                                     <Text style={Styles.name}>{item.name}</Text>

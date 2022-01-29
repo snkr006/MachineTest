@@ -25,7 +25,7 @@ const MyTabs = () => {
                 options={({ route }) => ({
                     tabBarLabel: "Home",
                     tabBarIcon: ({ focused }) => (
-                        <Image style={{ height: 0.069 * windowWidth, width:  0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
+                        <Image style={{ height: 0.069 * windowWidth, width: 0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
                             source={require('../images/icons/home.png')} />
                     )
                 })}
@@ -34,7 +34,7 @@ const MyTabs = () => {
                 options={({ route }) => ({
                     tabBarLabel: "Categories",
                     tabBarIcon: ({ focused }) => (
-                        <Image style={{ height:  0.069 * windowWidth, width:  0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
+                        <Image style={{ height: 0.069 * windowWidth, width: 0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
                             source={require('../images/icons/category.png')} />
                     )
                 })}
@@ -43,7 +43,7 @@ const MyTabs = () => {
                 options={({ route }) => ({
                     tabBarLabel: "Studio",
                     tabBarIcon: ({ focused }) => (
-                        <Image style={{ height:  0.069 * windowWidth, width:  0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
+                        <Image style={{ height: 0.069 * windowWidth, width: 0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
                             source={require('../images/icons/studio.png')} />
                     )
                 })}
@@ -52,7 +52,7 @@ const MyTabs = () => {
                 options={({ route }) => ({
                     tabBarLabel: "Explore",
                     tabBarIcon: ({ focused }) => (
-                        <Image style={{ height:  0.069 * windowWidth, width:  0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
+                        <Image style={{ height: 0.069 * windowWidth, width: 0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
                             source={require('../images/icons/explore.png')} />
                     )
                 })}
@@ -61,7 +61,7 @@ const MyTabs = () => {
                 options={({ route }) => ({
                     tabBarLabel: "Profile",
                     tabBarIcon: ({ focused }) => (
-                        <Image style={{ height:  0.069 * windowWidth, width:  0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
+                        <Image style={{ height: 0.069 * windowWidth, width: 0.069 * windowWidth, resizeMode: 'contain', tintColor: focused ? '#F53E6B' : 'black' }}
                             source={require('../images/icons/profile.png')} />
                     )
                 })}

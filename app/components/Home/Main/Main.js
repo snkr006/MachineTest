@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
-import { Text, View, Dimensions, TextInput, TouchableOpacity, Image, FlatList } from 'react-native';
+import React from 'react';
+import { Text, View, TouchableOpacity, Image, FlatList, Platform } from 'react-native';
 import Styles from './Styles';
 import Constant from '../../../globals/Data/Constant'
 import Header from '../../../globals/Components/Header';

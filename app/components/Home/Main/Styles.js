@@ -1,8 +1,7 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
 
-const windowWidth = Dimensions.get('window').width
 const windowHeight = Dimensions.get('window').height
-// 390 844
+
 
 const Styles = StyleSheet.create({
     basecontainer: {
@@ -10,13 +9,12 @@ const Styles = StyleSheet.create({
         backgroundColor: 'white'
     },
     container1: {
-        borderBottomWidth: 1,
         borderBottomColor: 'rgba(0, 0, 0, 0.2)',
-        height: 0.088 * windowHeight,
+        height: Platform.OS == 'ios' ? 0.088 * windowHeight : 0.08 * windowHeight,
         width: '100%',
         flexDirection: 'row',
         alignItems: 'flex-end',
-        justifyContent:'center',
+        justifyContent: 'center',
         paddingBottom: 0.011 * windowHeight,
         paddingHorizontal: 0.017 * windowHeight
     },
@@ -27,7 +25,7 @@ const Styles = StyleSheet.create({
     },
     container1b: {
         flex: 1,
-        alignItems:'center',
+        alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'flex-end'
     },
@@ -65,7 +63,6 @@ const Styles = StyleSheet.create({
         width: '100%',
         resizeMode: 'cover'
     }
-
 })
 
 export default Styles
