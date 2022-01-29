@@ -69,3 +69,5 @@ const Styles = StyleSheet.create({
 })
 
 export default Styles
+
+// https://github.com/snkr006/MachineTest.git
