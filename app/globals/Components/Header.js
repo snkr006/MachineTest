@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
-import { Text, View, Dimensions, TextInput, TouchableOpacity, Image } from 'react-native';
+import React from 'react';
+import { View, TouchableOpacity, Image } from 'react-native';
 import Styles from '../../components/Home/Main/Styles';
 
 const Header = (props) => {

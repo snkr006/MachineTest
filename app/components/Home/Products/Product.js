@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
-import { Text, View, Dimensions, FlatList, TouchableOpacity, Image, ImageBackground } from 'react-native';
+import React from 'react';
+import { Text, View, FlatList, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import Styles1 from '../Main/Styles';
 import Styles from './Styles';
 import Header from '../../../globals/Components/Header';
@@ -33,29 +33,15 @@ const Product = (props) => {
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item, index }) => {
                     return (
-                        <TouchableOpacity style={{
-                            flex: 1,
-                            // paddingRight: index % 2 == 0 ? 1 : 0
-                        }}
+                        <TouchableOpacity style={{ flex: 1, paddingRight: index % 2 == 0 ? 1 : 0 }}
                             onPress={() => props.navigation.navigate('Details', { data: item })}>
 
                             <View>
                                 <ImageBackground style={Styles.image}
-                                    // resizeMethod='resize'
                                     resizeMode='cover'
                                     source={item.image}>
 
-                          
-                                {/* <View style={{ position: 'absolute', bottom: 0 }}> */}
-                                    <View
-                                        // style={{
-                                        //     flex: 1,
-                                        //     justifyContent: 'flex-end',
-                                        //     paddingBottom: 10,
-                                        //     paddingLeft: 10
-                                        // }}
-                                    style={Styles.ratingView}
-                                    >
+                                    <View style={Styles.ratingView} >
                                         <View style={Styles.ratingview1}>
                                             <View style={Styles.ratingView2}>
                                                 <Text style={Styles.rating}>
@@ -74,8 +60,8 @@ const Product = (props) => {
                                         </View>
 
                                     </View>
-                                    </ImageBackground>
-                                {/* </View> */}
+                                </ImageBackground>
+
                             </View>
 
                             <View style={Styles.desc}>

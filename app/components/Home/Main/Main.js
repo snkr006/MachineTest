@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, Image, FlatList, Platform } from 'react-native';
+import { View, TouchableOpacity, Image, FlatList } from 'react-native';
 import Styles from './Styles';
 import Constant from '../../../globals/Data/Constant'
 import Header from '../../../globals/Components/Header';

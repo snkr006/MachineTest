@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
-import { Text, View, Dimensions, TextInput, TouchableOpacity, Image } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
 
 
 const Studio = (props) => {

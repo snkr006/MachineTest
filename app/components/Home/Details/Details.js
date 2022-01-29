@@ -58,7 +58,7 @@ const Details = (props) => {
 
                         <View style={Styles.details1a}>
                             <Text style={Styles.detailsDesc}>
-                                Best Price: <Text style={{ color: '#F53E6B' }}>$ 459</Text>
+                                Best Price: <Text style={{ color: '#F53E6B' }}>₹ 459</Text>
                             </Text>
                             <Text style={Styles.detailsdesc1}>
                                 Applicable on: Orders above Rs. 1299{'\n'}
@@ -69,7 +69,7 @@ const Details = (props) => {
                                 Get additional offer
                             </Text>
                             <Text style={Styles.detailsdesc1}>
-                                Buy this style and unlock additional 10% off upto $50 on a selected catalogue.
+                                Buy this style and unlock additional 10% off upto ₹50 on a selected catalogue.
                             </Text>
                         </View>
 
@@ -118,7 +118,7 @@ const Details = (props) => {
             </View>
             <View style={Styles.container3}>
                 <View style={Styles2.container3a}>
-                    <TouchableOpacity style={[Styles.buttonView, { borderWidth: 0.2 }]}>
+                    <TouchableOpacity style={[Styles.buttonView, { borderWidth: 0.3 }]}>
                         <Image style={Styles1.icon} source={require('../../../images/icons/heart.png')}></Image>
                         <Text style={[Styles2.containerText, { paddingLeft: 5 }]}>WISHLIST</Text>
                     </TouchableOpacity>
